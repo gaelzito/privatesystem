@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tela de login</title>
+    
+</head>
+
+<style>
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,1) 1%, rgba(0,187,3,0.8995973389355743) 100%);
+    }
+
+    .tela-login {
+        background-color: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        transform: translate(-50%, -50%);
+        padding: 50px;
+        top: 50%;
+        left: 50%;
+        border-radius: 20px;
+    }
+
+    h1 {
+        color: aliceblue;
+    }
+
+    input {
+        padding: 10px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+    }
+
+    button {
+        background: rgb(42,0,87);
+        background: linear-gradient(45deg, rgba(42,0,87,1) 0%, rgba(106,0,255,1) 100%);
+        border: none;
+        color: aliceblue;
+        padding: 10px;
+        width: 100%;
+        border-radius: 20px;
+        font-size: 16px;
+    }
+    
+
+</style>
+
+<body>
+    <div class="tela-login">
+        <h1>Login</h1>
+        <input type="text" placeholder="Nome" id="nome">
+        <br><br>
+        <input type="password" placeholder="Senha" id="senha">
+        <br><br>
+        <button onclick="logar()">
+            Logar
+        </button>
+        
+    </div>
+
+    <script>
+
+        function logar(){
+
+          var login = document.getElementById("nome").value;
+          var senha = document.getElementById("senha").value;
+
+          if(login == "gaelzito" && senha == "110423"){
+            alert("logado com sucesso");
+            location.href = "home.html";
+          }if(login == "joohnglpz" && senha == "str9974"){
+            alert("logado com sucesso");
+            location.href = "home.html";
+          }
+
+        }
+
+
+    </script>
+</body>
+</html>
